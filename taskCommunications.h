@@ -30,6 +30,7 @@ extern "C" {
 
 
 void vTaskCommunications();
+void TRX_mode(char* mode);
 
 
 #ifdef	__cplusplus

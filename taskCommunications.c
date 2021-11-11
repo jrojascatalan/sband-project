@@ -1,3 +1,4 @@
+
 /*                                 SUCHAI
  *                      NANOSATELLITE FLIGHT SOFTWARE
  *
@@ -22,7 +23,6 @@
 extern xQueueHandle i2cRxQueue;
 
 static void com_RxI2C(xQueueHandle i2c_rx_queue);
-static void TRX_mode(char* mode);
 
 
 //static const char *tag = "Communications";
@@ -167,15 +167,18 @@ static void com_RxI2C(xQueueHandle i2c_rx_queue)
 }
 
 
-static void TRX_mode(char* mode){
+void TRX_mode(char* mode){
     char idle[3]="+++";
     char active[4]="ATA\r";
-    if(strcmp(mode,"IDLE")==0){
-        Uart_Trx_test(idle,3);
+    printf("%s\n",mode);
+    if(strncmp(mode,"IDLE",4)==0){
+        _LATE5=0;
+        //Uart_Trx_test(idle,3);
         printf("IdleMode\n");
     }
-    else if(strcmp(mode,"ACTV")==0){
-        Uart_Trx_test(active,3);
+    else if(strncmp(mode,"ACTV",4)==0){
+        _LATE5=1;
+        //Uart_Trx_test(active,4);
         printf("Active mode\n");
     }
     else{

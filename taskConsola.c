@@ -5,7 +5,8 @@
 #include "FreeRTOS.h"
 #include "queue.h"
 #include "task.h"
-#define BUFF_MAX_LENGTH 16
+#include "taskCommunications.h"
+#define BUFF_MAX_LENGTH 17
 #define CMD_LENGTH 4
 
 
@@ -48,7 +49,12 @@ void vTaskConsola(void *pvParameters){
                     //UART_RX2_STR(UARTRx2queue, input_sband_buff);
                     
                     if(strlen(input_buffer)!=0){
-                        Uart_Trx_test(input_buffer,strlen(input_buffer));
+                        printf("%s",input_buffer+1);
+                        if(input_buffer[0]=='/'){
+                           TRX_mode(input_buffer+1);
+                           printf("%s",input_buffer+1);
+                        }
+                        else Uart_Trx_test(input_buffer,strlen(input_buffer));
                         //printf("%d",strlen(input_buffer));
                     }
                     printf("%s",input_sband_buff);
@@ -92,7 +98,7 @@ void UART_RX2_STR(xQueueHandle UARTRx2queue, char * buffer ){
     char new_char;
     portBASE_TYPE result = pdFALSE;
     while(1){
-        result = xQueueReceive(UARTRx2queue, &new_char, 50/ portTICK_RATE_MS);
+        result = xQueueReceive(UARTRx2queue, &new_char, 10/ portTICK_RATE_MS);
         if(result==pdPASS){
             *(buffer+i)=new_char;
              i++;

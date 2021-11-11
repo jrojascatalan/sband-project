@@ -9,6 +9,6 @@ void GPIO_Init(){
     //_LATC1=1;
 //   _TRISD2=0;
   //  _LATD#endif        
-  // _TRISE6=0;
-  // _LATE6=0;
+  _TRISE5=0;
+  _LATE5=0;
 }

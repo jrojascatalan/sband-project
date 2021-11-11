@@ -14,4 +14,19 @@ FreeRTOS/Portable/portmacro.h  \
 FreeRTOS/Includes/queue.h  \
  FreeRTOS/Includes/task.h  \
 FreeRTOS/Includes/list.h  \
- FreeRTOS/Includes/task.h 
+ FreeRTOS/Includes/task.h  \
+ /home/javier/MPLABXProjects/SbandTRX/taskCommunications.h  \
+ /home/javier/MPLABXProjects/SbandTRX/config.h  \
+libcsp/include/csp/csp.h  \
+ libcsp/include/csp/csp_types.h  \
+libcsp/include/csp/csp_platform.h  \
+ libcsp/include/csp/csp_error.h  \
+libcsp/include/csp/csp_debug.h  \
+ libcsp/include/csp/csp_buffer.h  \
+libcsp/include/csp/csp_rtable.h  \
+ libcsp/include/csp/csp_iflist.h  \
+libcsp/include/csp/csp_iflist.h  \
+ libcsp/include/csp/csp_endian.h  \
+libcsp/include/csp/drivers/i2c.h  \
+ libcsp/include/csp/interfaces/csp_if_i2c.h  \
+ libcsp/include/csp/csp_interface.h 
