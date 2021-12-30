@@ -10,10 +10,10 @@ int i2c_init(int handle, int mode, uint8_t addr, uint16_t speed, int queue_len_t
     switch(speed)
     {
         case 100:
-            BRG = 37;
+            BRG = 157;
             break;
         case 400:
-            BRG = 9;
+            BRG = 37;
             break;
         default:
             return CSP_ERR_DRIVER;

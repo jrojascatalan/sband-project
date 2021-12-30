@@ -16,7 +16,6 @@
             <file>file:/home/javier/MPLABXProjects/SbandTRX/libcsp/include/csp/drivers/i2c.h</file>
             <file>file:/home/javier/MPLABXProjects/SbandTRX/pic_config.h</file>
             <file>file:/home/javier/MPLABXProjects/SbandTRX/serial_comm.h</file>
-            <file>file:/home/javier/MPLABXProjects/FreeRTOStest.X/libcsp/include/csp/csp_autoconfig.h</file>
             <file>file:/home/javier/MPLABXProjects/SbandTRX/taskCommunications.h</file>
             <file>file:/home/javier/MPLABXProjects/SbandTRX/libcsp/src/interfaces/csp_if_i2c.c</file>
             <file>file:/home/javier/MPLABXProjects/SbandTRX/libcsp/src/csp_service_handler.c</file>
