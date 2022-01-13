@@ -144,7 +144,7 @@ static void com_RxI2C(xQueueHandle i2c_rx_queue)
         result = xQueueReceive(i2c_rx_queue, &new_data, 50/ portTICK_RATE_MS);
         
         //No more data received
-        if(result != pdPASS)
+        if((result != pdPASS)||nrcv>=255 )
         {
             if(nrcv > 0)
             {
@@ -162,6 +162,7 @@ static void com_RxI2C(xQueueHandle i2c_rx_queue)
             frame_p->data[nrcv] = (uint8_t)new_data;
             //printf("%d\n",new_data);
             nrcv++;
+            printf("%d\n",nrcv);
         }
     }
 }

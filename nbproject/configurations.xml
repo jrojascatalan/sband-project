@@ -67,7 +67,7 @@
             <itemPath>libcsp/include/csp/csp_error.h</itemPath>
             <itemPath>libcsp/include/csp/csp_platform.h</itemPath>
             <itemPath>libcsp/include/csp/csp_types.h</itemPath>
-            <itemPath>/home/javier/MPLABXProjects/FreeRTOStest.X/libcsp/include/csp/csp_autoconfig.h</itemPath>
+            <itemPath>/home/javier/MPLABXProjects/SbandTRX/libcsp/include/csp/csp_autoconfig.h</itemPath>
           </logicalFolder>
         </logicalFolder>
       </logicalFolder>
