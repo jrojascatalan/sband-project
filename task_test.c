@@ -24,8 +24,8 @@ void vTaskBlink(void *pvParameters){
    xLastWakeTime=xTaskGetTickCount();
 
    while(1){
-         vTaskDelayUntil(&xLastWakeTime, 2000/portTICK_RATE_MS);
-         _LATE6=!_LATE6;
+         vTaskDelayUntil(&xLastWakeTime, 1/portTICK_RATE_MS);
+         _LATE5=!_LATE5;
       }
 }
 

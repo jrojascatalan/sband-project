@@ -127,6 +127,7 @@ void vTaskCommunications(void *param)
 static void com_RxI2C(xQueueHandle i2c_rx_queue)
 {
     static int nrcv = 0;
+    static char flag=0;
     static char new_data = 0;
     static i2c_frame_t *frame_p = NULL;
     static portBASE_TYPE result = pdFALSE;
@@ -141,10 +142,17 @@ static void com_RxI2C(xQueueHandle i2c_rx_queue)
 
     while(1) //Optimization, before: while(result == pdPASS)
     {
-        result = xQueueReceive(i2c_rx_queue, &new_data, 50/ portTICK_RATE_MS);
+        if(flag){
+         frame_p->data[nrcv] = (uint8_t)new_data;
+         printf("%d\n",nrcv);
+         nrcv++;
+         printf("%d\n",nrcv);
+         flag=0;
+        }
+        result = xQueueReceive(i2c_rx_queue, &new_data, 1/ portTICK_RATE_MS);
         
         //No more data received
-        if((result != pdPASS)||nrcv>=255 )
+        if((result != pdPASS)||nrcv>=256 )
         {
             if(nrcv > 0)
             {
@@ -152,6 +160,9 @@ static void com_RxI2C(xQueueHandle i2c_rx_queue)
                 csp_i2c_rx(frame_p, NULL);
                 csp_buffer_free(frame_p);
                 frame_p = NULL;
+                if(nrcv>=256 && result==pdPASS)
+                    flag=1;
+                     printf("%d\n",nrcv);
             }
 
             break; //Optimization, not conditional while exit
@@ -162,7 +173,7 @@ static void com_RxI2C(xQueueHandle i2c_rx_queue)
             frame_p->data[nrcv] = (uint8_t)new_data;
             //printf("%d\n",new_data);
             nrcv++;
-            printf("%d\n",nrcv);
+            //printf("%d\n",nrcv);
         }
     }
 }
