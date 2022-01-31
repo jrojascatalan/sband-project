@@ -34,12 +34,15 @@ PPC_DEFAULT_CW1();
 PPC_DEFAULT_CW2();
 PPC_DEFAULT_CW3();
 xQueueHandle i2cRxQueue;
+xQueueHandle i2cCounterQueue;
+
 xQueueHandle UARTRx1queue;
 xQueueHandle UARTRx2queue;
 //xTaskHandle vTaskblinkHandle;
 
 int main(void){ 
-    i2cRxQueue = xQueueCreate(I2C_MTU, sizeof(char)); 
+    i2cRxQueue = xQueueCreate(5*I2C_MTU, sizeof(char)); 
+    i2cCounterQueue = xQueueCreate(10, sizeof(char)); 
     UARTRx1queue = xQueueCreate(I2C_MTU, sizeof(char)); 
     UARTRx2queue = xQueueCreate(I2C_MTU, sizeof(char));
     
