@@ -151,59 +151,42 @@ static void com_RxI2C(xQueueHandle i2c_rx_queue,xQueueHandle i2c_counter )
     {
 
         result = xQueueReceive(i2c_counter, &new_length, 1/ portTICK_RATE_MS);
-       // printf("%d\n",new_length);
+       //printf("%d\n",new_length);
         //No more data received
         if((result != pdPASS))
         {
             if(counter > 0){
-            while(counter>nrcv){
-            result2 = xQueueReceive(i2c_rx_queue, &new_data, 1/ portTICK_RATE_MS);
-            if(result2!=pdPASS || nrcv>=counter){
-                if(nrcv>0){
-                frame_p->len = nrcv;
-                printf("%s\n",(char *)frame_p);
-                csp_i2c_rx(frame_p, NULL);
-                csp_buffer_free(frame_p);
-                frame_p = NULL;
-                counter=0;
-                }
-                break;
+                 //printf("%d\n",counter);
+                 xQueueSend( i2c_counter, &counter, 1/ portTICK_RATE_MS );
+                 counter=0;
             }
-            else{
-                 frame_p->data[nrcv] = (uint8_t)new_data;
-                 printf("%d\n", new_data);
-                 nrcv++;
-            }
-            }
-            
-            //printf("%d\n",nrcv);
+           
+            break;
         }
         else{
+            //printf("%d",new_length);
+            while(new_length>nrcv){
             result2 = xQueueReceive(i2c_rx_queue, &new_data, 1/ portTICK_RATE_MS);
-            if(result2!=pdPASS || nrcv>=new_length){
-                if(nrcv>0){
+                 frame_p->data[nrcv] = (uint8_t)new_data;
+                 //printf("%d\n", new_data);
+                 nrcv++;
+            }
                 frame_p->len = nrcv;
-                printf("%s\n",(char *)frame_p);
                 csp_i2c_rx(frame_p, NULL);
                 csp_buffer_free(frame_p);
                 frame_p = NULL;
-                }
                 break;
             }
-            else{
-                 frame_p->data[nrcv] = (uint8_t)new_data;
-                 nrcv++;
-            }
-            
-        
-        }
+              
+  }
                 
  
 
 
     }
-}
-}
+
+
+
 
 
 void TRX_mode(char* mode){
