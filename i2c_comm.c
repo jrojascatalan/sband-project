@@ -28,7 +28,7 @@ char I2C2_BUFF[_I2C2_RCV_BUFF_LEN]; ///< Salve data buffer
 char I2C3_BUFF[_I2C3_RCV_BUFF_LEN]; ///< Salve data buffer
 #endif
 char P_flag=0;
-char counter=0;
+unsigned char counter=0;
 extern xQueueHandle i2cRxQueue;
 extern xQueueHandle i2cCounterQueue;
 
@@ -39,7 +39,7 @@ static int i2c_check_ack(int device);
 static int i2c_check_bus_collision(int device);
 static void i2c3_slave_putc(char data);
 static char i2c3_slave_getc(void);
-static void i2c3_sendcounter(char data);
+static void i2c3_sendcounter(unsigned char data);
 
 
 
@@ -401,7 +401,7 @@ static char i2c3_slave_getc(void)
         return 0;
 #endif
 }
-static void i2c3_sendcounter(char data)
+static void i2c3_sendcounter(unsigned char data)
 {
     portBASE_TYPE xHigherPriorityTaskWoken = pdFALSE;
     xQueueSendFromISR(i2cCounterQueue, &data, &xHigherPriorityTaskWoken);

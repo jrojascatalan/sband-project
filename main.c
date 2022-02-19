@@ -41,8 +41,8 @@ xQueueHandle UARTRx2queue;
 //xTaskHandle vTaskblinkHandle;
 
 int main(void){ 
-    i2cRxQueue = xQueueCreate(5*I2C_MTU, sizeof(char)); 
-    i2cCounterQueue = xQueueCreate(10, sizeof(char)); 
+    i2cRxQueue = xQueueCreate(6*I2C_MTU, sizeof(char)); 
+    i2cCounterQueue = xQueueCreate(20, sizeof(char)); 
     UARTRx1queue = xQueueCreate(I2C_MTU, sizeof(char)); 
     UARTRx2queue = xQueueCreate(I2C_MTU, sizeof(char));
     

@@ -24,7 +24,7 @@ extern xQueueHandle i2cRxQueue;
 extern xQueueHandle i2cCounterQueue;
 
 extern char P_flag;
-extern char counter;
+extern unsigned char counter;
 
 static void com_RxI2C(xQueueHandle i2c_rx_queue, xQueueHandle i2cCounterQueue);
 
@@ -133,7 +133,7 @@ static void com_RxI2C(xQueueHandle i2c_rx_queue,xQueueHandle i2c_counter )
     static int nrcv = 0;
     static char flag=0;
     static char new_data = 0;
-    static char new_length = 0;
+    static unsigned char new_length = 0;
     static i2c_frame_t *frame_p = NULL;
     static portBASE_TYPE result = pdFALSE;
     static portBASE_TYPE result2 = pdFALSE;
@@ -147,20 +147,20 @@ static void com_RxI2C(xQueueHandle i2c_rx_queue,xQueueHandle i2c_counter )
         return;
     }
 
-    while(1) //Optimization, before: while(result == pdPASS)
-    {
-
+    while(1){ //Optimization, before: while(result == pdPASS)
+        
         result = xQueueReceive(i2c_counter, &new_length, 1/ portTICK_RATE_MS);
        //printf("%d\n",new_length);
         //No more data received
         if((result != pdPASS))
-        {
+       {
             if(counter > 0){
                  //printf("%d\n",counter);
                  xQueueSend( i2c_counter, &counter, 1/ portTICK_RATE_MS );
-                 counter=0;
+                    counter=0;
+                    break;
             }
-           
+       
             break;
         }
         else{
@@ -176,12 +176,12 @@ static void com_RxI2C(xQueueHandle i2c_rx_queue,xQueueHandle i2c_counter )
                 csp_buffer_free(frame_p);
                 frame_p = NULL;
                 break;
-            }
-              
+                 }
+       
   }
-                
+       
+              
  
-
 
     }
 
