@@ -96,11 +96,11 @@
 #define configUSE_PREEMPTION                    1
 #define configUSE_PORT_OPTIMISED_TASK_SELECTION 0
 #define configUSE_TICKLESS_IDLE                 0
-#define configCPU_CLOCK_HZ                      ( ( unsigned long ) 16000000 )  /* Fosc / 2 */
+#define configCPU_CLOCK_HZ                      ( ( unsigned long ) 16000000 )  /* Fosc / 2 cristal 24MHz =12000000 */
 #define configTICK_RATE_HZ                      ( ( portTickType ) 1000 )
 #define configMAX_PRIORITIES                    ( 5 )
 #define configMINIMAL_STACK_SIZE                ( 115 ) /* Don't change (115 bytes Min) */
-#define configTOTAL_HEAP_SIZE                   ( ( size_t ) 12800 )
+#define configTOTAL_HEAP_SIZE                   ( ( size_t ) 14300 )
 #define configMAX_TASK_NAME_LEN                 ( 4 )
 #define configUSE_TRACE_FACILITY                1
 #define configUSE_16_BIT_TICKS                  1

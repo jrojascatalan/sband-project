@@ -18,3 +18,4 @@ void vTaskBlink();
 void vTaskPrint();
 void vTaskPing();
 void vTaskConsola();
+void vTaskRxhandler();

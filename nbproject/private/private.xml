@@ -3,28 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/javier/MPLABXProjects/SbandTRX/FreeRTOS/Includes/FreeRTOSConfig.h</file>
-            <file>file:/home/javier/MPLABXProjects/SbandTRX/taskConsola.c</file>
-            <file>file:/home/javier/MPLABXProjects/SbandTRX/libcsp/include/csp/csp_types.h</file>
-            <file>file:/home/javier/MPLABXProjects/SbandTRX/serial_comm.c</file>
-            <file>file:/home/javier/MPLABXProjects/SbandTRX/libcsp/init_comsys.c</file>
-            <file>file:/home/javier/MPLABXProjects/SbandTRX/i2c.c</file>
-            <file>file:/home/javier/MPLABXProjects/SbandTRX/pic_config.c</file>
-            <file>file:/home/javier/MPLABXProjects/SbandTRX/nbproject/Makefile-impl.mk</file>
             <file>file:/home/javier/MPLABXProjects/SbandTRX/main.c</file>
-            <file>file:/home/javier/MPLABXProjects/SbandTRX/i2c_comm.c</file>
-            <file>file:/home/javier/MPLABXProjects/SbandTRX/task_test.c</file>
-            <file>file:/home/javier/MPLABXProjects/SbandTRX/taskCommunications.c</file>
-            <file>file:/home/javier/MPLABXProjects/SbandTRX/task_test.h</file>
-            <file>file:/home/javier/MPLABXProjects/SbandTRX/libcsp/include/csp/csp.h</file>
-            <file>file:/home/javier/MPLABXProjects/SbandTRX/libcsp/src/csp_iflist.c</file>
-            <file>file:/home/javier/MPLABXProjects/SbandTRX/pic_config.h</file>
-            <file>file:/home/javier/MPLABXProjects/SbandTRX/serial_comm.h</file>
-            <file>file:/home/javier/MPLABXProjects/SbandTRX/taskCommunications.h</file>
-            <file>file:/home/javier/MPLABXProjects/SbandTRX/libcsp/src/interfaces/csp_if_i2c.c</file>
-            <file>file:/home/javier/MPLABXProjects/SbandTRX/FreeRTOS/Includes/queue.h</file>
-            <file>file:/home/javier/MPLABXProjects/SbandTRX/config.h</file>
-            <file>file:/home/javier/MPLABXProjects/SbandTRX/i2c_comm.h</file>
         </group>
     </open-files>
 </project-private>

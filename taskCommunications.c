@@ -19,14 +19,13 @@
  */
 
 #include "taskCommunications.h"
+#include "semphr.h"
 
-extern xQueueHandle i2cRxQueue;
-extern xQueueHandle i2cCounterQueue;
+//extern xQueueHandle i2cRxQueue;
+//extern xQueueHandle i2cCounterQueue;
 
-extern char P_flag;
-extern unsigned char counter;
 
-static void com_RxI2C(xQueueHandle i2c_rx_queue, xQueueHandle i2cCounterQueue);
+//static void com_RxI2C(void);
 
 
 //static const char *tag = "Communications";
@@ -66,13 +65,13 @@ void vTaskCommunications(void *param)
 
     while(1)
     {
-        com_RxI2C(i2cRxQueue, i2cCounterQueue);
+        //com_RxI2C();
         //Uart_Trx_test(test,5);
         /* CSP SERVER */
         /* Wait for connection, 1000 ms timeout */
         if((conn = csp_accept(sock, 500)) == NULL)
             continue; /* Try again later */
-
+        
         /* Read packets. Timeout is 500 ms */
         while ((packet = csp_read(conn, 500)) != NULL)
         {
@@ -128,62 +127,8 @@ void vTaskCommunications(void *param)
  * @param packet a csp buffer containing a com_frame_t structure.
  */
 
-static void com_RxI2C(xQueueHandle i2c_rx_queue,xQueueHandle i2c_counter )
-{
-    static int nrcv = 0;
-    static char flag=0;
-    static char new_data = 0;
-    static unsigned char new_length = 0;
-    static i2c_frame_t *frame_p = NULL;
-    static portBASE_TYPE result = pdFALSE;
-    static portBASE_TYPE result2 = pdFALSE;
 
-    if(frame_p == NULL)
-    {
-        frame_p = (i2c_frame_t *) csp_buffer_get(I2C_MTU);
-        frame_p->len = 0;
-        nrcv = 0;
-        
-        return;
-    }
 
-    while(1){ //Optimization, before: while(result == pdPASS)
-        
-        result = xQueueReceive(i2c_counter, &new_length, 1/ portTICK_RATE_MS);
-       //printf("%d\n",new_length);
-        //No more data received
-        if((result != pdPASS))
-       {
-            if(counter > 0){
-                 //printf("%d\n",counter);
-                 xQueueSend( i2c_counter, &counter, 1/ portTICK_RATE_MS );
-                    counter=0;
-                    break;
-            }
-       
-            break;
-        }
-        else{
-            //printf("%d",new_length);
-            while(new_length>nrcv){
-            result2 = xQueueReceive(i2c_rx_queue, &new_data, 1/ portTICK_RATE_MS);
-                 frame_p->data[nrcv] = (uint8_t)new_data;
-                 //printf("%d\n", new_data);
-                 nrcv++;
-            }
-                frame_p->len = nrcv;
-                csp_i2c_rx(frame_p, NULL);
-                csp_buffer_free(frame_p);
-                frame_p = NULL;
-                break;
-                 }
-       
-  }
-       
-              
- 
-
-    }
 
 
 

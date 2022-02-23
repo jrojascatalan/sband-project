@@ -16,6 +16,7 @@
 #ifdef _I2C_SLAVE_RTOS
 #include "FreeRTOS.h"
 #include "queue.h"
+#include "semphr.h"
 #endif
 
 #ifdef _I2C_SLAVE_BUFF
@@ -28,9 +29,12 @@ char I2C2_BUFF[_I2C2_RCV_BUFF_LEN]; ///< Salve data buffer
 char I2C3_BUFF[_I2C3_RCV_BUFF_LEN]; ///< Salve data buffer
 #endif
 char P_flag=0;
+i2c_frame_t *frame_p = NULL;
+
 unsigned char counter=0;
-extern xQueueHandle i2cRxQueue;
-extern xQueueHandle i2cCounterQueue;
+//extern xQueueHandle i2cRxQueue;
+//extern xQueueHandle i2cCounterQueue;
+extern xSemaphoreHandle i2csem;
 
 //Static functions
 static void i2c_master_wait(int device);
@@ -39,7 +43,7 @@ static int i2c_check_ack(int device);
 static int i2c_check_bus_collision(int device);
 static void i2c3_slave_putc(char data);
 static char i2c3_slave_getc(void);
-static void i2c3_sendcounter(unsigned char data);
+//static void i2c3_sendcounter(unsigned char data);
 
 
 
@@ -324,6 +328,8 @@ static int i2c_check_bus_collision(int device)
     return iwcol_flag;
 }
 
+
+
 void __attribute__((__interrupt__, auto_psv)) _SI2C3Interrupt(void)
 {
     SI2C3_Clear_Intr_Status_Bit;
@@ -336,10 +342,11 @@ void __attribute__((__interrupt__, auto_psv)) _SI2C3Interrupt(void)
         if(I2C3STATbits.R_W == 0){ //Write
         #ifdef _I2C_SLAVE_RTOS
           I2C3_SLAVE_ST = I2C_SLV_WRITE;
-                   if(counter!=0){
+          frame_p = (i2c_frame_t *) csp_buffer_get_isr(I2C_MTU);
+              //     if(counter!=0){
          // printf("%d\n",counter);
-          i2c3_sendcounter(counter);
-                   }
+          //i2c3_sendcounter(counter);
+            //       }
         #else
           I2C3_SLAVE_ST = I2C_SLV_W_ADDR; 
         #endif
@@ -359,9 +366,10 @@ void __attribute__((__interrupt__, auto_psv)) _SI2C3Interrupt(void)
             I2C3_SLAVE_ST = I2C_SLV_WRITE;
             break;
         case I2C_SLV_WRITE:
-            i2c3_slave_putc(data);
+            frame_p->data[counter] = (uint8_t)data;
             i2c3_slave_address++;
             counter++;
+            
             break;
         case I2C_SLV_READ:
             I2C3TRN = (unsigned int)i2c3_slave_getc();
@@ -371,15 +379,17 @@ void __attribute__((__interrupt__, auto_psv)) _SI2C3Interrupt(void)
             break;
     }
    
-    I2C3CONbits.SCLREL = 1;   
+    I2C3CONbits.SCLREL = 1;  
+    i2c3_slave_putc(data);
 }
-
 static void i2c3_slave_putc(char data)
 {
 #ifdef _I2C_SLAVE_RTOS
     portBASE_TYPE xHigherPriorityTaskWoken = pdFALSE;
-    xQueueSendFromISR(i2cRxQueue, &data, &xHigherPriorityTaskWoken);   
+    xSemaphoreGiveFromISR(i2csem,&xHigherPriorityTaskWoken);
+    //xQueueSendFromISR(i2cRxQueue, &data, &xHigherPriorityTaskWoken);   
     //portEND_SWITCHING_ISR(xHigherPriorityTaskWoken);
+    
 #endif
 
 #ifdef _I2C_SLAVE_BUFF
@@ -401,9 +411,4 @@ static char i2c3_slave_getc(void)
         return 0;
 #endif
 }
-static void i2c3_sendcounter(unsigned char data)
-{
-    portBASE_TYPE xHigherPriorityTaskWoken = pdFALSE;
-    xQueueSendFromISR(i2cCounterQueue, &data, &xHigherPriorityTaskWoken);
-    counter=0;
-}
+

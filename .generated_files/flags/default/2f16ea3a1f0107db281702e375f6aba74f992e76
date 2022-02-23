@@ -1,0 +1,1 @@
+ -c -mcpu=$(MP_PROCESSOR_OPTION)        -g -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"/home/javier/MPLABXProjects/SbandTRX/libcsp/src/crypto/csp_hmac.c

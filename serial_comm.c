@@ -14,12 +14,12 @@ void serial_conf(){
     // H1.18 - U1TX - RP17 - IO.6 - UART 1 PARA CONSOLA SERIAL
     iPPSOutput(OUT_PIN_PPS_RP23,OUT_FN_PPS_U1TX);
     //iPPSOutput(OUT_PIN_PPS_RP17,OUT_FN_PPS_U1TX);
-     ConfigRS232(16, RS2_M_UART1); 
+     ConfigRS232(17, RS2_M_UART1); //Para Cristal de 24 MHz 12=230400, Para Cristal de 32 MHz 17
      RS232EnableRxInterrupt(RS2_M_UART1);
  // Config puerto serie TRX
      iPPSInput(IN_FN_PPS_U2RX,IN_PIN_PPS_RP25);
      iPPSOutput(OUT_PIN_PPS_RP20,OUT_FN_PPS_U2TX);
-     ConfigRS232(16, RS2_M_UART2);
+     ConfigRS232(17, RS2_M_UART2); //Para Cristal de 24 MHz 12=230400, Para Cristal de 32 MHz 17
      RS232EnableRxInterrupt(RS2_M_UART2);
 
 }

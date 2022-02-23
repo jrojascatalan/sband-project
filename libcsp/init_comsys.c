@@ -18,7 +18,7 @@ int setup_libcsp(void){
     
     int t_ok;
     
-    t_ok = csp_buffer_init(5, 256);
+    t_ok = csp_buffer_init(10, 256);
     printf("buffer init:%d\n",t_ok);
     
     csp_set_hostname(SBAND_NAME);
@@ -37,7 +37,7 @@ int setup_libcsp(void){
     printf("csp default table set:%d\n",t_ok);
         
     t_ok = csp_route_start_task(500, 1);    
-    csp_route_print_table();    
-    csp_route_print_interfaces();
+    //csp_route_print_table();    
+    //csp_route_print_interfaces();
     return 0;
 }

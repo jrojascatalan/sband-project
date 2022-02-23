@@ -33,19 +33,20 @@
 PPC_DEFAULT_CW1();
 PPC_DEFAULT_CW2();
 PPC_DEFAULT_CW3();
-xQueueHandle i2cRxQueue;
-xQueueHandle i2cCounterQueue;
+//xQueueHandle i2cRxQueue;
+//xQueueHandle i2cCounterQueue;
 
 xQueueHandle UARTRx1queue;
 xQueueHandle UARTRx2queue;
+xSemaphoreHandle i2csem;
 //xTaskHandle vTaskblinkHandle;
 
 int main(void){ 
-    i2cRxQueue = xQueueCreate(6*I2C_MTU, sizeof(char)); 
-    i2cCounterQueue = xQueueCreate(20, sizeof(char)); 
+    //i2cRxQueue = xQueueCreate(2*I2C_MTU, sizeof(char)); 
+    //i2cCounterQueue = xQueueCreate(20, sizeof(char)); 
     UARTRx1queue = xQueueCreate(I2C_MTU, sizeof(char)); 
     UARTRx2queue = xQueueCreate(I2C_MTU, sizeof(char));
-    
+    i2csem=xSemaphoreCreateBinary();
     GPIO_Init();
     serial_conf();
     //i2c1_open(157, 3);
@@ -61,9 +62,9 @@ int main(void){
     TRX_init();
     //xTaskCreate(vTaskBlink,"blink",100,NULL,5,NULL);
     //xTaskCreate(vTaskPrint,"Print",500,NULL,5,NULL);
-    xTaskCreate(vTaskCommunications,"communication",500,NULL,9,NULL);
-    xTaskCreate(vTaskConsola,"consola",300,NULL,9,NULL);
-    //xTaskCreate(vTaskPing,"ping",500,NULL,9,NULL);
+    xTaskCreate(vTaskCommunications,"communication",500,NULL,3,NULL);
+    xTaskCreate(vTaskConsola,"consola",300,NULL,3,NULL);
+    xTaskCreate(vTaskRxhandler,"Rxhandler",500,NULL,4,NULL);
     vTaskStartScheduler();
 while(1){
 

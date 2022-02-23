@@ -9,6 +9,8 @@
 #define	I2C_COMM_H
 #include <stdio.h>
 #include <i2c.h>
+#include <csp/drivers/i2c.h>
+#include <csp/csp_buffer.h>
 /*---------------------------------
  *      I2C MODULES CODING TABLE
  *---------------------------------*/

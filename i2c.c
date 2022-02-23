@@ -13,7 +13,7 @@ int i2c_init(int handle, int mode, uint8_t addr, uint16_t speed, int queue_len_t
             BRG = 157;
             break;
         case 400:
-            BRG = 37;
+            BRG = 37; // Para cristal de 24 MHz usar 28
             break;
         default:
             return CSP_ERR_DRIVER;
