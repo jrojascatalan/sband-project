@@ -1,8 +1,5 @@
-build/default/production/_ext/742537886/taskCommunications.o: \
- /home/javier/MPLABXProjects/SbandTRX/taskCommunications.c \
- /home/javier/MPLABXProjects/SbandTRX/taskCommunications.h \
- /home/javier/MPLABXProjects/SbandTRX/config.h \
- /home/javier/MPLABXProjects/SbandTRX/serial_comm.h \
+build/default/production/taskCommunications.o: taskCommunications.c \
+ taskCommunications.h config.h serial_comm.h \
  libcsp/include/csp/csp_types.h libcsp/include/csp/csp_autoconfig.h \
  libcsp/include/csp/csp.h libcsp/include/csp/csp_types.h \
  libcsp/include/csp/csp_platform.h FreeRTOS/Includes/FreeRTOS.h \
@@ -19,11 +16,11 @@ build/default/production/_ext/742537886/taskCommunications.o: \
  libcsp/include/csp/csp_interface.h FreeRTOS/Includes/semphr.h \
  FreeRTOS/Includes/queue.h
 
-/home/javier/MPLABXProjects/SbandTRX/taskCommunications.h:
+taskCommunications.h:
 
-/home/javier/MPLABXProjects/SbandTRX/config.h:
+config.h:
 
-/home/javier/MPLABXProjects/SbandTRX/serial_comm.h:
+serial_comm.h:
 
 libcsp/include/csp/csp_types.h:
 

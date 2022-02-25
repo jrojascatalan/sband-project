@@ -68,7 +68,7 @@
             <itemPath>libcsp/include/csp/csp_error.h</itemPath>
             <itemPath>libcsp/include/csp/csp_platform.h</itemPath>
             <itemPath>libcsp/include/csp/csp_types.h</itemPath>
-            <itemPath>/home/javier/MPLABXProjects/SbandTRX/libcsp/include/csp/csp_autoconfig.h</itemPath>
+            <itemPath>libcsp/include/csp/csp_autoconfig.h</itemPath>
           </logicalFolder>
         </logicalFolder>
       </logicalFolder>
@@ -76,8 +76,8 @@
       <itemPath>pic_config.h</itemPath>
       <itemPath>serial_comm.h</itemPath>
       <itemPath>i2c_comm.h</itemPath>
-      <itemPath>/home/javier/MPLABXProjects/SbandTRX/config.h</itemPath>
-      <itemPath>/home/javier/MPLABXProjects/SbandTRX/taskCommunications.h</itemPath>
+      <itemPath>libcsp/config.h</itemPath>
+      <itemPath>taskCommunications.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -151,10 +151,10 @@
       <itemPath>serial_comm.c</itemPath>
       <itemPath>i2c_comm.c</itemPath>
       <itemPath>i2c.c</itemPath>
-      <itemPath>/home/javier/MPLABXProjects/SbandTRX/libcsp/init_comsys.c</itemPath>
-      <itemPath>/home/javier/MPLABXProjects/SbandTRX/taskConsola.c</itemPath>
       <itemPath>taskrxhandler.c</itemPath>
       <itemPath>taskCommunications.c</itemPath>
+      <itemPath>taskConsola.c</itemPath>
+      <itemPath>libcsp/init_comsys.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
