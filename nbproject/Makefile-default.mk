@@ -95,281 +95,281 @@ MP_LINKER_FILE_OPTION=,--script=p24FJ256GB106.gld
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/FreeRTOS/Portable/port.o: FreeRTOS/Portable/port.c  .generated_files/flags/default/cb48b417aa223d8327af29c29966e8b91bdc61ce .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/FreeRTOS/Portable/port.o: FreeRTOS/Portable/port.c  .generated_files/flags/default/9b824d921f85a8a3026be44be32eaa445eec9a2f .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/FreeRTOS/Portable" 
 	@${RM} ${OBJECTDIR}/FreeRTOS/Portable/port.o.d 
 	@${RM} ${OBJECTDIR}/FreeRTOS/Portable/port.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  FreeRTOS/Portable/port.c  -o ${OBJECTDIR}/FreeRTOS/Portable/port.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/Portable/port.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  FreeRTOS/Portable/port.c  -o ${OBJECTDIR}/FreeRTOS/Portable/port.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/Portable/port.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/FreeRTOS/list.o: FreeRTOS/list.c  .generated_files/flags/default/7420368d83e2898563ba0146cd6f3537842c9c4 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/FreeRTOS/list.o: FreeRTOS/list.c  .generated_files/flags/default/c85d25111e5cb9685a47b4d7e33d17373d0ecaab .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/FreeRTOS" 
 	@${RM} ${OBJECTDIR}/FreeRTOS/list.o.d 
 	@${RM} ${OBJECTDIR}/FreeRTOS/list.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  FreeRTOS/list.c  -o ${OBJECTDIR}/FreeRTOS/list.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/list.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  FreeRTOS/list.c  -o ${OBJECTDIR}/FreeRTOS/list.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/list.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/FreeRTOS/heap_1.o: FreeRTOS/heap_1.c  .generated_files/flags/default/bac10a2cef2f66c60ac979fdefb5a151ba44bd24 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/FreeRTOS/heap_1.o: FreeRTOS/heap_1.c  .generated_files/flags/default/8f752780feab8d4687da48928be09089412d20f8 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/FreeRTOS" 
 	@${RM} ${OBJECTDIR}/FreeRTOS/heap_1.o.d 
 	@${RM} ${OBJECTDIR}/FreeRTOS/heap_1.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  FreeRTOS/heap_1.c  -o ${OBJECTDIR}/FreeRTOS/heap_1.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/heap_1.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  FreeRTOS/heap_1.c  -o ${OBJECTDIR}/FreeRTOS/heap_1.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/heap_1.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/FreeRTOS/tasks.o: FreeRTOS/tasks.c  .generated_files/flags/default/6ac2493b598c2471e7fddaa6f0a76a8881ef6b21 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/FreeRTOS/tasks.o: FreeRTOS/tasks.c  .generated_files/flags/default/e515bf2cf11d62409c322b1651496cb54f009690 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/FreeRTOS" 
 	@${RM} ${OBJECTDIR}/FreeRTOS/tasks.o.d 
 	@${RM} ${OBJECTDIR}/FreeRTOS/tasks.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  FreeRTOS/tasks.c  -o ${OBJECTDIR}/FreeRTOS/tasks.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/tasks.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  FreeRTOS/tasks.c  -o ${OBJECTDIR}/FreeRTOS/tasks.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/tasks.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/FreeRTOS/queue.o: FreeRTOS/queue.c  .generated_files/flags/default/db60c6f8c547531debba08327c3823d58e38e0fa .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/FreeRTOS/queue.o: FreeRTOS/queue.c  .generated_files/flags/default/90720303ccfb2ca5bdc3ccac397554d563995dff .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/FreeRTOS" 
 	@${RM} ${OBJECTDIR}/FreeRTOS/queue.o.d 
 	@${RM} ${OBJECTDIR}/FreeRTOS/queue.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  FreeRTOS/queue.c  -o ${OBJECTDIR}/FreeRTOS/queue.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/queue.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  FreeRTOS/queue.c  -o ${OBJECTDIR}/FreeRTOS/queue.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/queue.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/arch/freertos/csp_queue.o: libcsp/src/arch/freertos/csp_queue.c  .generated_files/flags/default/a2ffcc6b3e576e4fbef345fca15e0283c0869a1c .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/arch/freertos/csp_queue.o: libcsp/src/arch/freertos/csp_queue.c  .generated_files/flags/default/c07cc678c93095d924b1ea276101024d543e3c56 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src/arch/freertos" 
 	@${RM} ${OBJECTDIR}/libcsp/src/arch/freertos/csp_queue.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/arch/freertos/csp_queue.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/arch/freertos/csp_queue.c  -o ${OBJECTDIR}/libcsp/src/arch/freertos/csp_queue.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/arch/freertos/csp_queue.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/arch/freertos/csp_queue.c  -o ${OBJECTDIR}/libcsp/src/arch/freertos/csp_queue.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/arch/freertos/csp_queue.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/arch/freertos/csp_semaphore.o: libcsp/src/arch/freertos/csp_semaphore.c  .generated_files/flags/default/d7c11fbcf7cabdfd605bb4378727a2da5babea13 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/arch/freertos/csp_semaphore.o: libcsp/src/arch/freertos/csp_semaphore.c  .generated_files/flags/default/239f23f636ca48bb22865d98ebd49efbc10aeb01 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src/arch/freertos" 
 	@${RM} ${OBJECTDIR}/libcsp/src/arch/freertos/csp_semaphore.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/arch/freertos/csp_semaphore.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/arch/freertos/csp_semaphore.c  -o ${OBJECTDIR}/libcsp/src/arch/freertos/csp_semaphore.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/arch/freertos/csp_semaphore.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/arch/freertos/csp_semaphore.c  -o ${OBJECTDIR}/libcsp/src/arch/freertos/csp_semaphore.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/arch/freertos/csp_semaphore.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/arch/freertos/csp_system.o: libcsp/src/arch/freertos/csp_system.c  .generated_files/flags/default/dfb70f37a015e8bb9dbf215b83979596a525ef3d .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/arch/freertos/csp_system.o: libcsp/src/arch/freertos/csp_system.c  .generated_files/flags/default/e078bd902f3596a385580c69e7f6470a74810b56 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src/arch/freertos" 
 	@${RM} ${OBJECTDIR}/libcsp/src/arch/freertos/csp_system.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/arch/freertos/csp_system.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/arch/freertos/csp_system.c  -o ${OBJECTDIR}/libcsp/src/arch/freertos/csp_system.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/arch/freertos/csp_system.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/arch/freertos/csp_system.c  -o ${OBJECTDIR}/libcsp/src/arch/freertos/csp_system.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/arch/freertos/csp_system.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/arch/freertos/csp_malloc.o: libcsp/src/arch/freertos/csp_malloc.c  .generated_files/flags/default/77273386742263b01d51b1a3371d5c122359ed53 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/arch/freertos/csp_malloc.o: libcsp/src/arch/freertos/csp_malloc.c  .generated_files/flags/default/163926148de7191f32ffececaaba39443c3e5d81 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src/arch/freertos" 
 	@${RM} ${OBJECTDIR}/libcsp/src/arch/freertos/csp_malloc.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/arch/freertos/csp_malloc.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/arch/freertos/csp_malloc.c  -o ${OBJECTDIR}/libcsp/src/arch/freertos/csp_malloc.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/arch/freertos/csp_malloc.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/arch/freertos/csp_malloc.c  -o ${OBJECTDIR}/libcsp/src/arch/freertos/csp_malloc.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/arch/freertos/csp_malloc.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/arch/freertos/csp_time.o: libcsp/src/arch/freertos/csp_time.c  .generated_files/flags/default/edc39be3d271dc626c7ed931932b63e54089ce6d .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/arch/freertos/csp_time.o: libcsp/src/arch/freertos/csp_time.c  .generated_files/flags/default/fbffc82883a59efcabbf1b3fa4182c51819201a8 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src/arch/freertos" 
 	@${RM} ${OBJECTDIR}/libcsp/src/arch/freertos/csp_time.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/arch/freertos/csp_time.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/arch/freertos/csp_time.c  -o ${OBJECTDIR}/libcsp/src/arch/freertos/csp_time.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/arch/freertos/csp_time.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/arch/freertos/csp_time.c  -o ${OBJECTDIR}/libcsp/src/arch/freertos/csp_time.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/arch/freertos/csp_time.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/arch/freertos/csp_thread.o: libcsp/src/arch/freertos/csp_thread.c  .generated_files/flags/default/c9063368fcc27b3b6a9face3e2256659a44800f6 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/arch/freertos/csp_thread.o: libcsp/src/arch/freertos/csp_thread.c  .generated_files/flags/default/da2ca0dd32828312fbaf45240777580783ea1fff .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src/arch/freertos" 
 	@${RM} ${OBJECTDIR}/libcsp/src/arch/freertos/csp_thread.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/arch/freertos/csp_thread.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/arch/freertos/csp_thread.c  -o ${OBJECTDIR}/libcsp/src/arch/freertos/csp_thread.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/arch/freertos/csp_thread.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/arch/freertos/csp_thread.c  -o ${OBJECTDIR}/libcsp/src/arch/freertos/csp_thread.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/arch/freertos/csp_thread.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/crypto/csp_hmac.o: libcsp/src/crypto/csp_hmac.c  .generated_files/flags/default/59a3d04bcb966d841d4b69cba5bb41b7c811f10a .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/crypto/csp_hmac.o: libcsp/src/crypto/csp_hmac.c  .generated_files/flags/default/a4f0ba2a93d90996fe8eb8ca25c757817b899ada .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src/crypto" 
 	@${RM} ${OBJECTDIR}/libcsp/src/crypto/csp_hmac.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/crypto/csp_hmac.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/crypto/csp_hmac.c  -o ${OBJECTDIR}/libcsp/src/crypto/csp_hmac.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/crypto/csp_hmac.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/crypto/csp_hmac.c  -o ${OBJECTDIR}/libcsp/src/crypto/csp_hmac.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/crypto/csp_hmac.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/crypto/csp_sha1.o: libcsp/src/crypto/csp_sha1.c  .generated_files/flags/default/afab8a95aaad1e33b4daf73d209616ec068ea1fc .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/crypto/csp_sha1.o: libcsp/src/crypto/csp_sha1.c  .generated_files/flags/default/f29f0ea0ee232cfeb88caca373c1e13065b2e0e9 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src/crypto" 
 	@${RM} ${OBJECTDIR}/libcsp/src/crypto/csp_sha1.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/crypto/csp_sha1.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/crypto/csp_sha1.c  -o ${OBJECTDIR}/libcsp/src/crypto/csp_sha1.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/crypto/csp_sha1.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/crypto/csp_sha1.c  -o ${OBJECTDIR}/libcsp/src/crypto/csp_sha1.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/crypto/csp_sha1.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/crypto/csp_xtea.o: libcsp/src/crypto/csp_xtea.c  .generated_files/flags/default/a56bd949fd8a58f84b00d47ea75f95e5f79d7285 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/crypto/csp_xtea.o: libcsp/src/crypto/csp_xtea.c  .generated_files/flags/default/adeddd21d9bf2bcea54ede11b2b400f6b32c67ff .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src/crypto" 
 	@${RM} ${OBJECTDIR}/libcsp/src/crypto/csp_xtea.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/crypto/csp_xtea.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/crypto/csp_xtea.c  -o ${OBJECTDIR}/libcsp/src/crypto/csp_xtea.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/crypto/csp_xtea.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/crypto/csp_xtea.c  -o ${OBJECTDIR}/libcsp/src/crypto/csp_xtea.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/crypto/csp_xtea.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/interfaces/csp_if_lo.o: libcsp/src/interfaces/csp_if_lo.c  .generated_files/flags/default/881ab84e7366c3004890b10737a512fbeaf6c939 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/interfaces/csp_if_lo.o: libcsp/src/interfaces/csp_if_lo.c  .generated_files/flags/default/f65fce178df223b381a643f3895f3bb012154d4b .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src/interfaces" 
 	@${RM} ${OBJECTDIR}/libcsp/src/interfaces/csp_if_lo.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/interfaces/csp_if_lo.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/interfaces/csp_if_lo.c  -o ${OBJECTDIR}/libcsp/src/interfaces/csp_if_lo.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/interfaces/csp_if_lo.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/interfaces/csp_if_lo.c  -o ${OBJECTDIR}/libcsp/src/interfaces/csp_if_lo.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/interfaces/csp_if_lo.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/interfaces/csp_if_i2c.o: libcsp/src/interfaces/csp_if_i2c.c  .generated_files/flags/default/a539d133a797f1cc1c457861fb720ed2c8b35d58 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/interfaces/csp_if_i2c.o: libcsp/src/interfaces/csp_if_i2c.c  .generated_files/flags/default/ed4d24527227a92d5fb4760658eaa48e17961433 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src/interfaces" 
 	@${RM} ${OBJECTDIR}/libcsp/src/interfaces/csp_if_i2c.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/interfaces/csp_if_i2c.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/interfaces/csp_if_i2c.c  -o ${OBJECTDIR}/libcsp/src/interfaces/csp_if_i2c.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/interfaces/csp_if_i2c.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/interfaces/csp_if_i2c.c  -o ${OBJECTDIR}/libcsp/src/interfaces/csp_if_i2c.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/interfaces/csp_if_i2c.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/rtable/csp_rtable_static.o: libcsp/src/rtable/csp_rtable_static.c  .generated_files/flags/default/c879809fe446b810cb3dfda12cfb4e5bd1641492 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/rtable/csp_rtable_static.o: libcsp/src/rtable/csp_rtable_static.c  .generated_files/flags/default/bd92af8ecd355cb8845412d7b0ee3e3ab77b6450 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src/rtable" 
 	@${RM} ${OBJECTDIR}/libcsp/src/rtable/csp_rtable_static.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/rtable/csp_rtable_static.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/rtable/csp_rtable_static.c  -o ${OBJECTDIR}/libcsp/src/rtable/csp_rtable_static.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/rtable/csp_rtable_static.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/rtable/csp_rtable_static.c  -o ${OBJECTDIR}/libcsp/src/rtable/csp_rtable_static.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/rtable/csp_rtable_static.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/transport/csp_udp.o: libcsp/src/transport/csp_udp.c  .generated_files/flags/default/d98f6fc2493f0e261ac19b9edec08e8ccb222d25 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/transport/csp_udp.o: libcsp/src/transport/csp_udp.c  .generated_files/flags/default/a7573e3bcca1c5f732a3c9e7c0cf0f5a3cef1c30 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src/transport" 
 	@${RM} ${OBJECTDIR}/libcsp/src/transport/csp_udp.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/transport/csp_udp.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/transport/csp_udp.c  -o ${OBJECTDIR}/libcsp/src/transport/csp_udp.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/transport/csp_udp.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/transport/csp_udp.c  -o ${OBJECTDIR}/libcsp/src/transport/csp_udp.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/transport/csp_udp.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/transport/csp_rdp.o: libcsp/src/transport/csp_rdp.c  .generated_files/flags/default/9b1f2d39db4af7eef84142cffa073fd0dd2fa211 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/transport/csp_rdp.o: libcsp/src/transport/csp_rdp.c  .generated_files/flags/default/ded0f971fbadc159041e06681fe40d702831fea6 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src/transport" 
 	@${RM} ${OBJECTDIR}/libcsp/src/transport/csp_rdp.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/transport/csp_rdp.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/transport/csp_rdp.c  -o ${OBJECTDIR}/libcsp/src/transport/csp_rdp.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/transport/csp_rdp.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/transport/csp_rdp.c  -o ${OBJECTDIR}/libcsp/src/transport/csp_rdp.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/transport/csp_rdp.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/csp_buffer.o: libcsp/src/csp_buffer.c  .generated_files/flags/default/1feadda3d7d2c59ee41e7a3d3e3261105ce2a32e .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/csp_buffer.o: libcsp/src/csp_buffer.c  .generated_files/flags/default/5fb976675164960d5d789de380366021733136fe .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src" 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_buffer.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_buffer.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_buffer.c  -o ${OBJECTDIR}/libcsp/src/csp_buffer.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_buffer.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_buffer.c  -o ${OBJECTDIR}/libcsp/src/csp_buffer.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_buffer.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/csp_sfp.o: libcsp/src/csp_sfp.c  .generated_files/flags/default/b800288d0c2d72e1bbe3b6f0aa3d62fb61b26e89 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/csp_sfp.o: libcsp/src/csp_sfp.c  .generated_files/flags/default/65c9d74eade48b6f366a5c831f47b571485c23ac .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src" 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_sfp.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_sfp.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_sfp.c  -o ${OBJECTDIR}/libcsp/src/csp_sfp.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_sfp.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_sfp.c  -o ${OBJECTDIR}/libcsp/src/csp_sfp.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_sfp.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/csp_qfifo.o: libcsp/src/csp_qfifo.c  .generated_files/flags/default/e564ea1b13c021896cb3375c62b32d8c123e7333 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/csp_qfifo.o: libcsp/src/csp_qfifo.c  .generated_files/flags/default/c4fb4c6b5874c53a5c60c20448e757e67626af7f .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src" 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_qfifo.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_qfifo.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_qfifo.c  -o ${OBJECTDIR}/libcsp/src/csp_qfifo.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_qfifo.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_qfifo.c  -o ${OBJECTDIR}/libcsp/src/csp_qfifo.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_qfifo.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/csp_endian.o: libcsp/src/csp_endian.c  .generated_files/flags/default/4c106b3e04e6b02ab42a334702fc9f3c9ff3e4e9 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/csp_endian.o: libcsp/src/csp_endian.c  .generated_files/flags/default/ac8731e87e523ef6a040993884feb9f84b2bf808 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src" 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_endian.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_endian.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_endian.c  -o ${OBJECTDIR}/libcsp/src/csp_endian.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_endian.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_endian.c  -o ${OBJECTDIR}/libcsp/src/csp_endian.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_endian.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/csp_conn.o: libcsp/src/csp_conn.c  .generated_files/flags/default/66be48635f57d962e9ba5eb14483f0d0f2095b00 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/csp_conn.o: libcsp/src/csp_conn.c  .generated_files/flags/default/cb9c93b429c71fbb1332cffba53b96c7acc31519 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src" 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_conn.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_conn.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_conn.c  -o ${OBJECTDIR}/libcsp/src/csp_conn.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_conn.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_conn.c  -o ${OBJECTDIR}/libcsp/src/csp_conn.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_conn.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/csp_iflist.o: libcsp/src/csp_iflist.c  .generated_files/flags/default/2920179a5926c0b4ddf3930be0b1be43545fb39a .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/csp_iflist.o: libcsp/src/csp_iflist.c  .generated_files/flags/default/a7dcd2328c4e4f335121a6cf5b82929ebf9feaee .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src" 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_iflist.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_iflist.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_iflist.c  -o ${OBJECTDIR}/libcsp/src/csp_iflist.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_iflist.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_iflist.c  -o ${OBJECTDIR}/libcsp/src/csp_iflist.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_iflist.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/csp_services.o: libcsp/src/csp_services.c  .generated_files/flags/default/5f63a5d16629b6c90d87481c890829b0b171ee79 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/csp_services.o: libcsp/src/csp_services.c  .generated_files/flags/default/7b8662b9a921b931341c6c99bd241e961293563a .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src" 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_services.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_services.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_services.c  -o ${OBJECTDIR}/libcsp/src/csp_services.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_services.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_services.c  -o ${OBJECTDIR}/libcsp/src/csp_services.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_services.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/csp_route.o: libcsp/src/csp_route.c  .generated_files/flags/default/e0659b7e4202bd173c64f0b75cf66e4c6c6a5367 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/csp_route.o: libcsp/src/csp_route.c  .generated_files/flags/default/3e32f79843d894790ba830591c32a40ec4e11200 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src" 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_route.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_route.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_route.c  -o ${OBJECTDIR}/libcsp/src/csp_route.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_route.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_route.c  -o ${OBJECTDIR}/libcsp/src/csp_route.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_route.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/csp_port.o: libcsp/src/csp_port.c  .generated_files/flags/default/5fb6e91f23d78a67ad6c112bebe534a822bfbe31 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/csp_port.o: libcsp/src/csp_port.c  .generated_files/flags/default/d542788cd297196f1661e42794ec4b83ed5ff8a7 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src" 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_port.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_port.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_port.c  -o ${OBJECTDIR}/libcsp/src/csp_port.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_port.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_port.c  -o ${OBJECTDIR}/libcsp/src/csp_port.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_port.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/csp_crc32.o: libcsp/src/csp_crc32.c  .generated_files/flags/default/f4bee9b0bea95abc14e38c7d7bced8cf709a460b .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/csp_crc32.o: libcsp/src/csp_crc32.c  .generated_files/flags/default/33e5bc90aaaacc0f6863e1ec7cb8f3429d3801bc .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src" 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_crc32.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_crc32.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_crc32.c  -o ${OBJECTDIR}/libcsp/src/csp_crc32.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_crc32.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_crc32.c  -o ${OBJECTDIR}/libcsp/src/csp_crc32.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_crc32.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/csp_promisc.o: libcsp/src/csp_promisc.c  .generated_files/flags/default/ebad4c564cab134dae5373bb0cc3b754c27ea158 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/csp_promisc.o: libcsp/src/csp_promisc.c  .generated_files/flags/default/25c17999e6aeb5ef6e40cc64d63a64a026c04aef .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src" 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_promisc.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_promisc.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_promisc.c  -o ${OBJECTDIR}/libcsp/src/csp_promisc.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_promisc.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_promisc.c  -o ${OBJECTDIR}/libcsp/src/csp_promisc.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_promisc.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/csp_service_handler.o: libcsp/src/csp_service_handler.c  .generated_files/flags/default/dc74463a09fe71b4df51e0c1d6d3b71737c85eed .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/csp_service_handler.o: libcsp/src/csp_service_handler.c  .generated_files/flags/default/aa28d841b8c84cb682af237ea95982022cee2167 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src" 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_service_handler.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_service_handler.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_service_handler.c  -o ${OBJECTDIR}/libcsp/src/csp_service_handler.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_service_handler.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_service_handler.c  -o ${OBJECTDIR}/libcsp/src/csp_service_handler.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_service_handler.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/csp_io.o: libcsp/src/csp_io.c  .generated_files/flags/default/5f907f3aa4205ad7e55abaa599709064055619f4 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/csp_io.o: libcsp/src/csp_io.c  .generated_files/flags/default/1aea178018ca88fedf95018b8de3a7bd48bdc026 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src" 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_io.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_io.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_io.c  -o ${OBJECTDIR}/libcsp/src/csp_io.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_io.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_io.c  -o ${OBJECTDIR}/libcsp/src/csp_io.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_io.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/csp_dedup.o: libcsp/src/csp_dedup.c  .generated_files/flags/default/becac6dcbf56cb3feed5530bd4d1c22c584007ad .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/csp_dedup.o: libcsp/src/csp_dedup.c  .generated_files/flags/default/dba6f1c3ca84f5552e72967a28f17d92e85bbc89 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src" 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_dedup.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_dedup.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_dedup.c  -o ${OBJECTDIR}/libcsp/src/csp_dedup.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_dedup.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_dedup.c  -o ${OBJECTDIR}/libcsp/src/csp_dedup.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_dedup.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/csp_bridge.o: libcsp/src/csp_bridge.c  .generated_files/flags/default/3dc6cccca44105a17fe828bf1fe29b424ec979b2 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/csp_bridge.o: libcsp/src/csp_bridge.c  .generated_files/flags/default/4ce5b074605698911c1dcd19018c9caa3c16fa71 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src" 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_bridge.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_bridge.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_bridge.c  -o ${OBJECTDIR}/libcsp/src/csp_bridge.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_bridge.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_bridge.c  -o ${OBJECTDIR}/libcsp/src/csp_bridge.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_bridge.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/csp_hex_dump.o: libcsp/src/csp_hex_dump.c  .generated_files/flags/default/2bcacdc0ebe2b0854da6790fd58443a3c8964b30 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/csp_hex_dump.o: libcsp/src/csp_hex_dump.c  .generated_files/flags/default/431cc82811a76c88eb2e2f3cdafd35225f3e2a50 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src" 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_hex_dump.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_hex_dump.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_hex_dump.c  -o ${OBJECTDIR}/libcsp/src/csp_hex_dump.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_hex_dump.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_hex_dump.c  -o ${OBJECTDIR}/libcsp/src/csp_hex_dump.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_hex_dump.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/src/csp_debug.o: libcsp/src/csp_debug.c  .generated_files/flags/default/806df391906d190552ed32fbdcf935a4cd275a8f .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/src/csp_debug.o: libcsp/src/csp_debug.c  .generated_files/flags/default/fbb11fb28ca6ed5425e5da486fc322dfb1d5db47 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp/src" 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_debug.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/src/csp_debug.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_debug.c  -o ${OBJECTDIR}/libcsp/src/csp_debug.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_debug.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/src/csp_debug.c  -o ${OBJECTDIR}/libcsp/src/csp_debug.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/src/csp_debug.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/main.o: main.c  .generated_files/flags/default/8f12885958f2481ca398cd1ba9c1c257697e2b06 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/main.o: main.c  .generated_files/flags/default/7e76d9f32b07a1cc250432107038d571fc8f8e5c .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/main.o.d 
 	@${RM} ${OBJECTDIR}/main.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  main.c  -o ${OBJECTDIR}/main.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/main.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  main.c  -o ${OBJECTDIR}/main.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/main.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/task_test.o: task_test.c  .generated_files/flags/default/3e3a67c4861886cf28ad44753eeb44fc13dea375 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/task_test.o: task_test.c  .generated_files/flags/default/5592bb5bd5da28479b0a00b5d93440db39cc49d6 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/task_test.o.d 
 	@${RM} ${OBJECTDIR}/task_test.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  task_test.c  -o ${OBJECTDIR}/task_test.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/task_test.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  task_test.c  -o ${OBJECTDIR}/task_test.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/task_test.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/pic_config.o: pic_config.c  .generated_files/flags/default/52e9c8de4d729a1dde1045f85250557b68d5f5b0 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/pic_config.o: pic_config.c  .generated_files/flags/default/573a1ccb67120e01b417e33c9dbc8c1f70d7c834 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/pic_config.o.d 
 	@${RM} ${OBJECTDIR}/pic_config.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  pic_config.c  -o ${OBJECTDIR}/pic_config.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/pic_config.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  pic_config.c  -o ${OBJECTDIR}/pic_config.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/pic_config.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/serial_comm.o: serial_comm.c  .generated_files/flags/default/5a8a544201d36020aeabc209eb5f04bdc5bb7f94 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/serial_comm.o: serial_comm.c  .generated_files/flags/default/ebbda9670b4e85decf2e385d0565cd53c8436ead .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/serial_comm.o.d 
 	@${RM} ${OBJECTDIR}/serial_comm.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  serial_comm.c  -o ${OBJECTDIR}/serial_comm.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/serial_comm.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  serial_comm.c  -o ${OBJECTDIR}/serial_comm.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/serial_comm.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/i2c_comm.o: i2c_comm.c  .generated_files/flags/default/d9fbbb3a88774bfc044d3d8f1a1af89ea83e9290 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/i2c_comm.o: i2c_comm.c  .generated_files/flags/default/b843afcdee01ed79b46ffeb21a629cbfd375cfb5 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/i2c_comm.o.d 
 	@${RM} ${OBJECTDIR}/i2c_comm.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  i2c_comm.c  -o ${OBJECTDIR}/i2c_comm.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/i2c_comm.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  i2c_comm.c  -o ${OBJECTDIR}/i2c_comm.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/i2c_comm.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/i2c.o: i2c.c  .generated_files/flags/default/a83a6ff8ff8f4ceb93e71c908c53b3134dff34cd .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/i2c.o: i2c.c  .generated_files/flags/default/3a97598fc695d0e28a1ae40ed1d3aef1284bf7b .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/i2c.o.d 
 	@${RM} ${OBJECTDIR}/i2c.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  i2c.c  -o ${OBJECTDIR}/i2c.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/i2c.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  i2c.c  -o ${OBJECTDIR}/i2c.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/i2c.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/taskrxhandler.o: taskrxhandler.c  .generated_files/flags/default/6c7df3587b86ee7b6da7cec0e98d466cce5e1cf6 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/taskrxhandler.o: taskrxhandler.c  .generated_files/flags/default/830ef5870908cf65cb52718b1c5160d4d80b387a .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/taskrxhandler.o.d 
 	@${RM} ${OBJECTDIR}/taskrxhandler.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  taskrxhandler.c  -o ${OBJECTDIR}/taskrxhandler.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/taskrxhandler.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  taskrxhandler.c  -o ${OBJECTDIR}/taskrxhandler.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/taskrxhandler.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/taskCommunications.o: taskCommunications.c  .generated_files/flags/default/791d228d24e413fefb9931f591880e273077c50e .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/taskCommunications.o: taskCommunications.c  .generated_files/flags/default/bf579c6c187af3be2340620bade6d9df8c47c0ea .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/taskCommunications.o.d 
 	@${RM} ${OBJECTDIR}/taskCommunications.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  taskCommunications.c  -o ${OBJECTDIR}/taskCommunications.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/taskCommunications.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  taskCommunications.c  -o ${OBJECTDIR}/taskCommunications.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/taskCommunications.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/taskConsola.o: taskConsola.c  .generated_files/flags/default/7f3121bf4ba2b3ff37cbf9533190164fb4c488e6 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/taskConsola.o: taskConsola.c  .generated_files/flags/default/ed027d5efc5171120570243640ba1ac2f31a0afa .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/taskConsola.o.d 
 	@${RM} ${OBJECTDIR}/taskConsola.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  taskConsola.c  -o ${OBJECTDIR}/taskConsola.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/taskConsola.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  taskConsola.c  -o ${OBJECTDIR}/taskConsola.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/taskConsola.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/libcsp/init_comsys.o: libcsp/init_comsys.c  .generated_files/flags/default/33dcfa68051979d83296d8566f6204858edf5a3e .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/libcsp/init_comsys.o: libcsp/init_comsys.c  .generated_files/flags/default/9e9f8f284f8d97666ed0f434b29266cd8b2b9d7c .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/libcsp" 
 	@${RM} ${OBJECTDIR}/libcsp/init_comsys.o.d 
 	@${RM} ${OBJECTDIR}/libcsp/init_comsys.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/init_comsys.c  -o ${OBJECTDIR}/libcsp/init_comsys.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/init_comsys.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_CC_PRE)  libcsp/init_comsys.c  -o ${OBJECTDIR}/libcsp/init_comsys.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/libcsp/init_comsys.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -O0 -I"libcsp/include" -I"FreeRTOS/Includes" -I"FreeRTOS/Portable" -msmart-io=1 -Wall -msfr-warn=off   -std=gnu99  -mdfp="${DFP_DIR}/xc16"
 	
 else
 ${OBJECTDIR}/FreeRTOS/Portable/port.o: FreeRTOS/Portable/port.c  .generated_files/flags/default/24baf93bb988e760ef881809868e2bf2f5197be5 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
@@ -659,11 +659,11 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: assemblePreproc
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/FreeRTOS/Portable/portasm_PIC24.o: FreeRTOS/Portable/portasm_PIC24.S  .generated_files/flags/default/29641b5a1d65633b1cab8fc1cbd7591b311807a6 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
+${OBJECTDIR}/FreeRTOS/Portable/portasm_PIC24.o: FreeRTOS/Portable/portasm_PIC24.S  .generated_files/flags/default/85bf41bd587bce399a2251341eb811b6685a7c9f .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
 	@${MKDIR} "${OBJECTDIR}/FreeRTOS/Portable" 
 	@${RM} ${OBJECTDIR}/FreeRTOS/Portable/portasm_PIC24.o.d 
 	@${RM} ${OBJECTDIR}/FreeRTOS/Portable/portasm_PIC24.o 
-	${MP_CC} $(MP_EXTRA_AS_PRE)  FreeRTOS/Portable/portasm_PIC24.S  -o ${OBJECTDIR}/FreeRTOS/Portable/portasm_PIC24.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/Portable/portasm_PIC24.o.d"  -D__DEBUG   -omf=elf -DXPRJ_default=$(CND_CONF)    -Wa,-MD,"${OBJECTDIR}/FreeRTOS/Portable/portasm_PIC24.o.asm.d",--defsym=__MPLAB_BUILD=1,--defsym=__ICD2RAM=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,,-g,--no-relax$(MP_EXTRA_AS_POST)  -mdfp="${DFP_DIR}/xc16"
+	${MP_CC} $(MP_EXTRA_AS_PRE)  FreeRTOS/Portable/portasm_PIC24.S  -o ${OBJECTDIR}/FreeRTOS/Portable/portasm_PIC24.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/FreeRTOS/Portable/portasm_PIC24.o.d"  -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -omf=elf -DXPRJ_default=$(CND_CONF)    -Wa,-MD,"${OBJECTDIR}/FreeRTOS/Portable/portasm_PIC24.o.asm.d",--defsym=__MPLAB_BUILD=1,--defsym=__ICD2RAM=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_PK3=1,-g,--no-relax$(MP_EXTRA_AS_POST)  -mdfp="${DFP_DIR}/xc16"
 	
 else
 ${OBJECTDIR}/FreeRTOS/Portable/portasm_PIC24.o: FreeRTOS/Portable/portasm_PIC24.S  .generated_files/flags/default/bbb99b0619026fb592dd01bf6a3f8465b0b2a5e5 .generated_files/flags/default/4dfea4184ea9d925c7c2d2fec11ef6d40291c183
@@ -679,7 +679,7 @@ endif
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
 ${DISTDIR}/SbandTRX.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    
 	@${MKDIR} ${DISTDIR} 
-	${MP_CC} $(MP_EXTRA_LD_PRE)  -o ${DISTDIR}/SbandTRX.${IMAGE_TYPE}.${OUTPUT_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}      -mcpu=$(MP_PROCESSOR_OPTION)        -D__DEBUG=__DEBUG   -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)      -Wl,,,--defsym=__MPLAB_BUILD=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,-D__DEBUG=__DEBUG,,$(MP_LINKER_FILE_OPTION),--stack=16,--check-sections,--data-init,--pack-data,--handles,--isr,--no-gc-sections,--fill-upper=0,--stackguard=16,--no-force-link,--smart-io,-Map="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map",--report-mem,--memorysummary,${DISTDIR}/memoryfile.xml$(MP_EXTRA_LD_POST)  -mdfp="${DFP_DIR}/xc16" 
+	${MP_CC} $(MP_EXTRA_LD_PRE)  -o ${DISTDIR}/SbandTRX.${IMAGE_TYPE}.${OUTPUT_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}      -mcpu=$(MP_PROCESSOR_OPTION)        -D__DEBUG=__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)   -mreserve=data@0x800:0x81F -mreserve=data@0x820:0x821 -mreserve=data@0x822:0x823 -mreserve=data@0x824:0x825 -mreserve=data@0x826:0x84F   -Wl,,,--defsym=__MPLAB_BUILD=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,-D__DEBUG=__DEBUG,--defsym=__MPLAB_DEBUGGER_PK3=1,$(MP_LINKER_FILE_OPTION),--stack=16,--check-sections,--data-init,--pack-data,--handles,--isr,--no-gc-sections,--fill-upper=0,--stackguard=16,--no-force-link,--smart-io,-Map="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map",--report-mem,--memorysummary,${DISTDIR}/memoryfile.xml$(MP_EXTRA_LD_POST)  -mdfp="${DFP_DIR}/xc16" 
 	
 else
 ${DISTDIR}/SbandTRX.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   

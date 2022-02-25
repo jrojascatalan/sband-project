@@ -18,14 +18,17 @@ void vTaskRxhandler(void *pvParameters){
     char plus=0;
     while(1){
         xSemaphoreTake(i2csem,portMAX_DELAY );//1/ portTICK_RATE_MS portMAX_DELAY
-        for(plus=0;plus<60;plus++); // Para cristal de 24 MHz, de 32MHz usar plus<60
+        //plus=0;
+        for(plus=0;plus<64;plus++);// Para cristal de 24 MHz, de 32MHz usar plus<60
+        
         if(I2C3STATbits.P==1){
                 frame_p->len = counter;
                 csp_i2c_rx(frame_p, NULL);
+                frame_p = NULL;
                 //printf("1");
                 //csp_buffer_free(frame_p);
-                //frame_p = NULL;
-                counter=0;
+                
+                //counter=0;
                 //printf("1");
         }
     }

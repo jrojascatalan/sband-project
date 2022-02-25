@@ -4,6 +4,13 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/home/javier/MPLABXProjects/SbandTRX/main.c</file>
+            <file>file:/home/javier/MPLABXProjects/SbandTRX/taskCommunications.c</file>
+            <file>file:/home/javier/MPLABXProjects/SbandTRX/task_test.h</file>
+            <file>file:/home/javier/MPLABXProjects/SbandTRX/taskCommunications.h</file>
+            <file>file:/home/javier/MPLABXProjects/SbandTRX/libcsp/init_comsys.c</file>
+            <file>file:/home/javier/MPLABXProjects/SbandTRX/i2c.c</file>
+            <file>file:/home/javier/MPLABXProjects/SbandTRX/libcsp/config.h</file>
+            <file>file:/home/javier/MPLABXProjects/SbandTRX/taskrxhandler.c</file>
         </group>
     </open-files>
 </project-private>

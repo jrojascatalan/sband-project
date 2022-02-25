@@ -341,6 +341,7 @@ void __attribute__((__interrupt__, auto_psv)) _SI2C3Interrupt(void)
     {
         if(I2C3STATbits.R_W == 0){ //Write
         #ifdef _I2C_SLAVE_RTOS
+          counter=0;
           I2C3_SLAVE_ST = I2C_SLV_WRITE;
           frame_p = (i2c_frame_t *) csp_buffer_get_isr(I2C_MTU);
               //     if(counter!=0){
@@ -372,7 +373,7 @@ void __attribute__((__interrupt__, auto_psv)) _SI2C3Interrupt(void)
             
             break;
         case I2C_SLV_READ:
-            I2C3TRN = (unsigned int)i2c3_slave_getc();
+//            I2C3TRN = (unsigned int)i2c3_slave_getc();
             i2c3_slave_address++;
             break;
         default:

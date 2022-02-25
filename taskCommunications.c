@@ -87,7 +87,7 @@ void vTaskCommunications(void *param)
             }
             else if(csp_conn_dport(conn)==7){
                 TRX_mode((char*)packet->data);
-                
+                csp_buffer_free(packet);
                 //printf("Mode Set:%s\n",(char*)packet->data);
             
             }
